@@ -3,7 +3,7 @@ def reverse_each_word (sentence)
   answer = ""
   sentence_array.collect do |element|
     element.reverse 
-    answer += element
+    answer += element + ""
   end
   answer
 end
