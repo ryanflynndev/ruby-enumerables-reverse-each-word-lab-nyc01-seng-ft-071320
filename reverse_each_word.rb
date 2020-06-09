@@ -1,6 +1,5 @@
 def reverse_each_word (sentence)
-  sentence_by_word = sentence.split(/\W+/)
-  sentence_array= [sentence_by_word]
+  sentence_array = sentence.split(/\W+/)
   answer = ""
   sentence_array.collect do |element|
     element.reverse 
