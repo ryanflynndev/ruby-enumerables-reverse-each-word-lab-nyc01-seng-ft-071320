@@ -1,10 +1,11 @@
 def reverse_each_word (sentence)
-  sentence_array = [sentence]
-  
+
+  reversed_sentence = sentence.reverse 
+  sentence_array = [reversed_sentence]
   sentence_array.collect do |element|
-    element.reverse 
+    return element
   end
-  puts sentence_array
+
 end
 
 reverse_each_word("Hello, how are you?")
